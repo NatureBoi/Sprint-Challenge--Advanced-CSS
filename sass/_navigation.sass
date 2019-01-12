@@ -21,4 +21,33 @@
                 text-decoration: none
                 padding: 1rem 2rem
                 color: $river-bend
-        
+.fixed-nav
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    padding: 1rem 0
+    align-items: baseline
+    opacity: .5
+    &:hover
+        opacity: 1
+    h1
+        width: 50%
+        text-align: left
+        font-size: 3rem
+        padding: 0
+    .nav-link-container
+        li
+            a
+                padding: 0 2rem
+
+@include mediaSm
+    .nav-container
+        h1
+            text-align: center
+            width: 100%
+            padding: .5rem 0
+        .nav-link-container
+            li
+                a
+                    padding: 0 1rem
